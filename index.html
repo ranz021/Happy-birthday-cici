@@ -14,7 +14,11 @@
 <div class="container">
 
   <div class="card" id="card-landing">
-    <img id="mainPhoto" class="photo" alt="photo">
+    <img
+      id="mainPhoto"
+      class="photo"
+      src="https://files.catbox.moe/sxwjk9.jpg"
+      alt="Foto">
     <h1>🎉 Happy Birthday Cici 🎉</h1>
     <p>Semoga hari ini penuh senyum ✨</p>
     <button onclick="nextCard('message')">Lanjut 💌</button>
@@ -29,19 +33,19 @@
   <div class="card hidden" id="card-form">
     <h2>📝 Isi Ya</h2>
     <form id="form">
-      <input required placeholder="Nama">
-      <textarea required placeholder="Keinginan masa depan"></textarea>
-      <textarea required placeholder="Target terbesar tahun ini"></textarea>
-      <textarea required placeholder="Hal yang ingin diubah"></textarea>
-      <textarea required placeholder="Hal yang bikin bahagia"></textarea>
-      <textarea required placeholder="Pesan buat diri sendiri"></textarea>
+      <input name="nama" required placeholder="Nama">
+      <textarea name="keinginan" required placeholder="Keinginan masa depan"></textarea>
+      <textarea name="target" required placeholder="Target terbesar tahun ini"></textarea>
+      <textarea name="ubah" required placeholder="Hal yang ingin diubah"></textarea>
+      <textarea name="bahagia" required placeholder="Hal yang bikin bahagia"></textarea>
+      <textarea name="pesan" required placeholder="Pesan buat diri sendiri"></textarea>
       <button type="submit">Kirim 💌</button>
     </form>
   </div>
 
   <div class="card hidden" id="card-success">
     <h2>💖 Terima Kasih</h2>
-    <p>Jawaban kamu sudah tersimpan 💕</p>
+    <p>Jawaban kamu sudah terkirim ke Telegram 💕</p>
   </div>
 
 </div>
