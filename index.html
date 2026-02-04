@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="confetti"></canvas>
+<div class="bg-glow"></div>
+
+<div class="container">
+
+  <div class="card" id="card-landing">
+    <img id="mainPhoto" class="photo" alt="photo">
+    <h1>🎉 Happy Birthday Cici 🎉</h1>
+    <p>Semoga hari ini penuh senyum ✨</p>
+    <button onclick="nextCard('message')">Lanjut 💌</button>
+  </div>
+
+  <div class="card hidden" id="card-message">
+    <h2>💌 Pesan</h2>
+    <p id="typing"></p>
+    <button onclick="nextCard('form')">Buka Pertanyaan ✨</button>
+  </div>
+
+  <div class="card hidden" id="card-form">
+    <h2>📝 Isi Ya</h2>
+    <form id="form">
+      <input required placeholder="Nama">
+      <textarea required placeholder="Keinginan masa depan"></textarea>
+      <textarea required placeholder="Target terbesar tahun ini"></textarea>
+      <textarea required placeholder="Hal yang ingin diubah"></textarea>
+      <textarea required placeholder="Hal yang bikin bahagia"></textarea>
+      <textarea required placeholder="Pesan buat diri sendiri"></textarea>
+      <button type="submit">Kirim 💌</button>
+    </form>
+  </div>
+
+  <div class="card hidden" id="card-success">
+    <h2>💖 Terima Kasih</h2>
+    <p>Jawaban kamu sudah tersimpan 💕</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
