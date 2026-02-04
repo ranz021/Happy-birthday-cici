@@ -24,9 +24,39 @@ let i = 0;
   }
 })();
 
-/* ================= FORM (GITHUB PAGES) ================= */
-byId("form").addEventListener("submit", e => {
+/* ================= TELEGRAM CONFIG ================= */
+// 🔥 GANTI INI
+const BOT_TOKEN = "ISI_BOT_TOKEN_LU";
+const CHAT_ID   = "ISI_CHAT_ID_LU";
+
+/* ================= FORM SUBMIT ================= */
+byId("form").addEventListener("submit", async e => {
   e.preventDefault();
+
+  const data = new FormData(e.target);
+
+  const message = `
+🎉 *Birthday Message*
+
+👤 Nama: ${data.get("nama")}
+
+🌈 Keinginan: ${data.get("keinginan")}
+🎯 Target: ${data.get("target")}
+🔁 Ingin diubah: ${data.get("ubah")}
+😊 Bahagia karena: ${data.get("bahagia")}
+💌 Pesan diri: ${data.get("pesan")}
+`;
+
+  await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      chat_id: CHAT_ID,
+      text: message,
+      parse_mode: "Markdown"
+    })
+  });
+
   nextCard("success");
 });
 
