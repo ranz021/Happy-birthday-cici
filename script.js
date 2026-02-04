@@ -27,7 +27,7 @@ let i = 0;
 /* ================= TELEGRAM CONFIG ================= */
 // 🔥 GANTI INI
 const BOT_TOKEN = "ISI_BOT_TOKEN_LU";
-const CHAT_ID   = "ISI_CHAT_ID_LU";
+const CHAT_ID   = "8116752882";
 
 /* ================= FORM SUBMIT ================= */
 byId("form").addEventListener("submit", async e => {
