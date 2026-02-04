@@ -1,7 +1,3 @@
-/* ================= FOTO (LINK ONLINE) ================= */
-const PHOTO_URL = "https://files.catbox.moe/vnew4y.jpg"; // GANTI DI SINI
-document.getElementById("mainPhoto").src = PHOTO_URL;
-
 /* ================= CARD CONTROL ================= */
 const cards = {
   landing: byId("card-landing"),
